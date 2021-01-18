@@ -1,0 +1,36 @@
+body{
+    font-family: 'Raleway', sans-serif;
+    font-size: 1em;
+    display: flex;
+    flex-direction: column;
+    padding: 2em 2em 2em 2em
+}
+
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.navigation ul{
+    display: flex;
+    flex-direction: row;
+
+}
+
+.navigation li {
+    list-style: none;
+}
+
+.navigation a{
+    text-decoration: none;
+    margin-left: 5em;
+    padding-top: 3.3em;
+    font-weight: bold;
+}
+
+.navigation a:hover {
+    font-weight: bolder;
+    color: #0065FC;
+    border-top: 4px solid #0065FC;
+}
