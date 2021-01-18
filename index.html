@@ -23,17 +23,20 @@
                 <ul>
                     <li><a href="#hebergements">Hébergements</a></li>
                     <li><a href="#activites">Activités</a></li>
-                    <li> <a href="#">S'inscrire</a></li>
+                    <li> <a class="inscrire" href="#">S'inscrire</a></li>
                 </ul>
             </div>
         </nav>
         <div class="search">
             <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
             <p>En plein centre ville ou en pleine nature</p>
-
+            
+            <div class="bouton_recherche">
             <i class="fas fa-map-marker-alt"></i>
             <input type="search" id="city-search" name="city-search" aria-label="City Search"
-                placeholder="Marseille,France">
+                placeholder="Marseille, France" class="zone_recherche">
+                <button>Rechercher</button>
+            </div>
         </div>
 
         <div class="filtre">
@@ -56,7 +59,7 @@
     <section>
         <div id="hebergements">
             <h2>Hébergements à Marseille</h2>
-            <div>
+            <div class="fiche">
                 <img src="pictures/hebergements/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="Auberge de la Cannebière">
                 <h3>Auberge de la Cannebière</h3>
                 <p>Nuit à partir de 25€</p>
@@ -66,7 +69,7 @@
                 <i class="fas fa-star"></i>
                 <i class="fas fa-star"></i>
             </div>
-            <div>
+            <div class="fiche">
                 <img src="pictures/hebergements/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="Hôtel du port">
                 <h3>Hôtel du port</h3>
                 <p>Nuit à partir de 52€</p>
@@ -76,7 +79,7 @@
                 <i class="fas fa-star"></i>
                 <i class="fas fa-star"></i>
             </div>
-            <div>
+            <div class="fiche">
                 <img src="pictures/hebergements/reisetopia-B8WIgxA_PFU-unsplash.jpg" alt="Hôtel les mouettes">
                 <h3>Hôtel les mouettes</h3>
                 <p>Nuit à partir de 76€</p>
@@ -86,7 +89,7 @@
                 <i class="fas fa-star"></i>
                 <i class="fas fa-star"></i>
             </div>
-            <div>
+            <div class="fiche">
                 <img src="pictures/hebergements/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="Hôtel de la mer">
                 <h3>Hôtel de la mer</h3>
                 <p>Nuit à partir de 46€</p>
@@ -96,7 +99,7 @@
                 <i class="fas fa-star"></i>
                 <i class="fas fa-star"></i>
             </div>
-            <div>
+            <div class="fiche">
                 <img src="pictures/hebergements/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" alt="Auberge Le Panier">
                 <h3>Auberge Le Panier</h3>
                 <p>Nuit à partir de 23€</p>
@@ -106,7 +109,7 @@
                 <i class="fas fa-star"></i>
                 <i class="fas fa-star"></i>
             </div>
-            <div>
+            <div class="fiche">
                 <img src="pictures/hebergements/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" alt="Hôtel chez Amina">
                 <h3>Hôtel chez Amina</h3>
                 <p>Nuit à partir de 96€</p>
@@ -121,6 +124,7 @@
 
         <aside>
             <h2>Les plus populaires</h2>
+            <i class="fas fa-chart-line"></i>
             <div>
                 <img src="pictures/hebergements/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="Hôtel Le soleil du matin">
                 <h3>Hôtel Le soleil du matin</h3>
