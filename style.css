@@ -33,7 +33,7 @@ nav{
 .navigation a:hover {
     font-weight: normal;
     color: #0065FC;
-    border-top: 4px solid #0065FC;
+    border-top: 3px solid #0065FC;
 }
 
 nav .inscrire{
@@ -101,7 +101,7 @@ nav .inscrire{
     align-items: center;
     text-decoration: none;
     font-weight: bold;
-    font-size: 1.2em;
+    font-size: 1.1em;
     border: solid 3px #F2F2F2;
     border-left: none;
     border-radius: 50px;
@@ -113,7 +113,7 @@ nav .inscrire{
 .filtre a:hover{
     font-weight: normal;
     color: #0065FC;
-    border: 4px solid #0065FC;
+    border: 3px solid #0065FC;
 }
 
 .filtre i{
@@ -124,6 +124,10 @@ nav .inscrire{
     color: #0065FC;
     padding: 10%;
     margin-right: 10%;
+}
+
+.money{
+    font-size: 3em;
 }
 
 /* texte info */
@@ -161,7 +165,8 @@ section{
     border: solid #F2F2F2;
     background-color: #F2F2F2;
     border-radius: 20px;
-    max-width: 60%; 
+    max-width: 70%; 
+    margin-right: 2%;
 }
 
 #hebergements h2{
@@ -170,29 +175,88 @@ section{
     margin-left: 5%;
 }
 
-.fiche{
+/* fiches photos hotels */
+
+.fichecadre{
     width: 25%;
     height: 35%;
-    margin-left: 3%;
-    padding: 1%;
     border: solid 1px white;
     background-color: white;
-    border-radius: 20px;
-    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.1);
-    text-align: center;
+    margin-left: 5%;
+    border-radius: 25px;
 }
 
-#hebergements img{
+.fiche1img{
+    background-image: url(pictures/hebergements/marcus-loke-WQJvWU_HZFo-unsplash.jpg);
+    background-position: top;
+    background-size: cover;
     width: 100%;
+    height: 60%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
 }
 
+.fiche2img{
+    background-image: url(pictures/hebergements/fred-kleber-gTbaxaVLvsg-unsplash.jpg);
+    background-position: top;
+    background-size: cover;
+    width: 100%;
+    height: 60%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.fiche3img{
+    background-image: url(pictures/hebergements/reisetopia-B8WIgxA_PFU-unsplash.jpg);
+    background-position: top;
+    background-size: cover;
+    width: 100%;
+    height: 60%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.fiche4img{
+    background-image: url(pictures/hebergements/annie-spratt-Eg1qcIitAuA-unsplash.jpg);
+    background-position: top;
+    background-size: cover;
+    width: 100%;
+    height: 60%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.fiche5img{
+    background-image: url(pictures/hebergements/nicate-lee-kT-ZyaiwBe0-unsplash.jpg);
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 60%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.fiche6img{
+    background-image: url(pictures/hebergements/febrian-zakaria-M6S1WvfW68A-unsplash.jpg);
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 60%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+#hebergements a{
+    text-decoration: none;
+    font-size: 0.8em;
+
+}
+/* aside les plus populaires */
 aside{
-    display: flex;
-    flex-direction: column;
     border: solid #F2F2F2;
     background-color: #F2F2F2;
     border-radius: 20px;
-    margin-left: 2%;
+    width: 20%;
 }
 
 
