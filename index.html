@@ -64,8 +64,8 @@
         </div>
     </header>
 
-    <article>
-        <section>
+    <main>
+        <section class="hebergements">
             <h2>Hébergements à Marseille</h2>
             <div id="hebergements">
                 <div class="fichecadre">
@@ -78,7 +78,7 @@
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
-                            <i class="fas fa-star" style="color: #d9d9d9;"></i>
+                            <i class="fas fa-star greystar"></i>
                         </div>
                     </a>
                 </div>
@@ -106,7 +106,7 @@
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
-                            <i class="fas fa-star" style="color: #d9d9d9;"></i>
+                            <i class="fas fa-star greystar"></i>
                         </div>
                     </a>
                 </div>
@@ -119,8 +119,8 @@
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
-                            <i class="fas fa-star" style="color: #d9d9d9;"></i>
-                            <i class="fas fa-star" style="color: #d9d9d9;"></i>
+                            <i class="fas fa-star greystar"></i>
+                            <i class="fas fa-star greystar"></i>
                         </div>
                     </a>
                 </div>
@@ -134,7 +134,7 @@
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
-                            <i class="fas fa-star" style="color: #d9d9d9;"></i>
+                            <i class="fas fa-star greystar"></i>
                         </div>
                     </a>
                 </div>
@@ -156,7 +156,7 @@
             <div class="afficher"><a href="#">Afficher plus</a></div>
         </section>
 
-        <!-- en cours -->
+        <!-- voir taille images en cours -->
 
             <aside>
                 <h2>Les plus populaires<i class="fas fa-chart-line"></i></h2>
@@ -186,7 +186,7 @@
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star"></i>
-                                <i class="fas fa-star" style="color: #d9d9d9;"></i> 
+                                <i class="fas fa-star greystar"></i> 
                             </div>
                     </div>
                 </a>
@@ -201,45 +201,49 @@
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star"></i>
-                                <i class="fas fa-star" style="color: #d9d9d9;"></i> 
+                                <i class="fas fa-star greystar"></i> 
                             </div>
                     </div>
                 </a>
             </aside>
-    </article>
+        </main>
 
     <section>
+        <h2>Activités à Marseille</h2>
         <div id="activites">
-            <h2>Activités à Marseille</h2>
-            <div>
-                <img src="pictures/activites/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="Vieux Port">
+            <div class="activitescadre">
+                <div class="activitescadre_img1"></div>
                 <h3>Vieux Port</h3>
             </div>
-            <div>
-                <img src="pictures/activites/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="Fort de Pomègues">
-                <h3>Fort de Pomègues</h3>
+            <div class="container">
+                <div class="activitescadre2" id="fort">
+                    <div class="activitescadre_img2"></div>
+                    <h3>Fort de Pomègues</h3>
+                </div>
+                <div class="activitescadre3">
+                    <div class="activitescadre_img3"></div>
+                    <h3>Îles du Frioul</h3>
+                </div>
             </div>
-            <div>
-                <img src="pictures/activites/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="Îles du Frioul">
-                <h3>Îles du Frioul</h3>
-            </div>
-            <div>
-                <img src="pictures/activites/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="Parc National des Calanques">
+            <div class="activitescadre">
+                <div class="activitescadre_img4"></div>
                 <h3>Parc National des Calanques</h3>
             </div>
-            <div>
-                <img src="pictures/activites/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="">
-                <h3>Notre-Dame-de-la-Garde</h3>
-            </div>
-            <div>
-                <img src="pictures/activites/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="Notre-Dame-de-la-Garde">
-                <h3>Parc Longchamp</h3>
+            <div class="container2">
+                <div class="activitescadre">
+                    <div class="activitescadre_img5"></div>
+                    <h3>Notre-Dame-de-la-Garde</h3>
+                </div>
+                <div class="activitescadre">
+                    <div class="activitescadre_img6"></div>
+                    <h3>Parc Longchamp</h3>
+                </div>
             </div>
         </div>
     </section>
 
     <footer>
-        <div>
+        <div class="listefooter">
             <h3>A propos</h3>
             <ul>
                 <li><a href="#"> Fonctionnement du site</a></li>
@@ -247,14 +251,14 @@
                 <li><a href="#"> Données et confidentialités</a></li>
             </ul>
         </div>
-        <div>
+        <div class="listefooter">
             <h3>Nos hébergements</h3>
             <ul>
                 <li><a href="#">Charte qualité</a></li>
                 <li><a href="#">Soumettre votre hôtel</a></li>
             </ul>
         </div>
-        <div>
+        <div class="listefooter">
             <h3>Assistance</h3>
             <ul>
                 <li><a href="#">Centre d'aide</a></li>
