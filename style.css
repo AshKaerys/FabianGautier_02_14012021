@@ -73,34 +73,35 @@ nav .inscrire{
 }
 
 .search i{
+    font-size: 1.2em;
     background-color: #F2F2F2;
     border-style: solid ;
     border-right-style: none;
     border-color: #F2F2F2;
-    border-top-left-radius: 10px;
-    border-bottom-left-radius: 10px;
-    padding: 0.8% 1% 0.8% 1%;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    padding: 15px;
 }
 
 .search input{
     border-style: solid;
     border-color: #F2F2F2;
-    padding-left: 1.5%;
-    padding-right: 2.5%;
+    padding-left: 20px;
+    padding-right: 30px;
 }
 
 .search button{
     background-color: #0065FC;
     border-style: solid;
     border-color: #0065FC;
-    border-top-right-radius: 10px;
-    border-bottom-right-radius: 10px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
     color: white;
     font-family: 'Raleway', sans-serif;
     font-size: 1em;
     font-weight: bold;
-    padding-right: 1%;
-    padding-left: 1%;
+    padding-right: 20px;
+    padding-left: 20px;
 }
 
 .zone_recherche::placeholder{
@@ -156,8 +157,8 @@ nav .inscrire{
 .info{
     display: flex;
     align-items: center;
-    margin-top: 1%;
-    margin-bottom: 1%;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 .info i{
@@ -166,7 +167,7 @@ nav .inscrire{
     border-color: #F2F2F2;
     border-radius: 100%;
     font-size: 1em;
-    margin-right: 1%;
+    margin-right: 10px;
     padding: 0.4% 0.7% 0.4% 0.7%;
 }
 
@@ -180,6 +181,14 @@ main{
     display: flex;
     margin-bottom: 40px;
 
+}
+
+section a:hover{
+    transform: scale(1.2);
+}
+
+main a:hover{
+    transform: scale(1.2);
 }
 
 .hebergements{
@@ -305,7 +314,7 @@ aside{
     border: solid #F2F2F2;
     background-color: #F2F2F2;
     border-radius: 20px;
-    padding: 40px;
+    padding: 0 40px 0 40px;
 }
 
 aside h2{
@@ -380,9 +389,15 @@ aside a i{
     margin-left: 20px;
 }
 
-.activitescadre{
+#activites a{
+    text-decoration: none;
+    color: black;
+}
+
+.activitescadre1{
     border-radius: 20px;
     box-shadow: 5px 5px 10px grey;
+    height: 450px;
 }
 
 .activitescadre2{
@@ -397,13 +412,13 @@ aside a i{
     height: 168px;
 }
 
-.activitescadre5{
+.activitescadre4{
     border-radius: 20px;
     box-shadow: 5px 5px 10px grey;
     height: 195px;
 }
 
-.activitescadre6{
+.activitescadre5{
     border-radius: 20px;
     box-shadow: 5px 5px 10px grey;
     height: 210px;
