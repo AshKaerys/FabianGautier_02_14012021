@@ -25,25 +25,27 @@ section{
 }
 
 
-/* header nav */
+/* header menu nav */
+
+.menu{
+    display: flex;
+    align-items: center;
+}
 
 nav{
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
 }
 
 .navigation ul{
     display: flex;
-    flex-direction: row;
-
 }
 
 .navigation li {
     list-style: none;
 }
 
-.navigation a{
+.menu a{
     text-decoration: none;
     margin-left: 5em;
     padding-top: 3.3em;
@@ -51,7 +53,7 @@ nav{
     color: black;
 }
 
-.navigation a:hover {
+.menu a:hover {
     font-weight: normal;
     color: #0065FC;
     border-top: 3px solid #0065FC;
@@ -184,14 +186,18 @@ main{
 }
 
 section a:hover{
-    transform: scale(1.2);
+    transform: scale(1.1);
 }
 
 main a:hover{
-    transform: scale(1.2);
+    transform: scale(1.1);
 }
 
-.hebergements{
+.fichecadre:hover{
+    transform: scale(1.1);
+}
+
+#hebergements{
     background-color: #F2F2F2;
     border-radius: 20px;
     margin-right: 40px;
@@ -205,23 +211,23 @@ main a:hover{
     text-decoration: none;
 }
 
-#hebergements {
+.hebergements {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 }
 
-#hebergements a{
+.hebergements a{
     text-decoration: none;
     font-size: 0.9em;
     color: black;
 }
 
-#hebergements h3{
+.hebergements h3{
     margin-left: 10px;
 }
 
-#hebergements p{
+.hebergements p{
     margin-left: 10px;
 }
 
@@ -244,7 +250,7 @@ main a:hover{
     border-radius: 25px;
     padding: 0.5%;
     margin-bottom: 40px;
-    box-shadow: 5px 5px 10px grey;
+    box-shadow: 0px 0px 10px lightgrey;
     line-height: 0.5em;
 }
 
@@ -320,6 +326,7 @@ aside{
 aside h2{
     display: flex;
     justify-content: space-between;
+    margin-bottom: 30px;
 }
 
 aside a{
@@ -341,7 +348,7 @@ aside a i{
     border-radius: 25px;
     padding: 1%;
     margin-bottom: 30px;
-    box-shadow: 5px 5px 10px grey;
+    box-shadow: 0px 0px 10px lightgrey;
 }
 
 .fiche1img_aside{
@@ -396,31 +403,31 @@ aside a i{
 
 .activitescadre1{
     border-radius: 20px;
-    box-shadow: 5px 5px 10px grey;
+    box-shadow: 0px 0px 10px lightgrey;
     height: 450px;
 }
 
 .activitescadre2{
     border-radius: 20px;
-    box-shadow: 5px 5px 10px grey;
+    box-shadow: 0px 0px 10px lightgrey;
     height: 240px;
 }
 
 .activitescadre3{
     border-radius: 20px;
-    box-shadow: 5px 5px 10px grey;
+    box-shadow: 0px 0px 10px lightgrey;
     height: 168px;
 }
 
 .activitescadre4{
     border-radius: 20px;
-    box-shadow: 5px 5px 10px grey;
+    box-shadow: 0px 0px 10px lightgrey;
     height: 195px;
 }
 
 .activitescadre5{
     border-radius: 20px;
-    box-shadow: 5px 5px 10px grey;
+    box-shadow: 0px 0px 10px lightgrey;
     height: 210px;
 }
 
@@ -525,4 +532,39 @@ footer ul{
 
 footer h3{
     margin-left: 40px;
+}
+
+/* media queries smartphone*/
+
+@media only screen and (max-width: 375px) {
+
+    header{
+        padding: 10px 20px;
+    }
+
+    main{
+        display: block;
+        padding: 20px;
+    }
+
+    .filtre{
+        flex-wrap: wrap;
+    }
+
+    #hebergements{
+        display: block;
+        margin: 0 auto;
+    }
+
+    .section{
+        padding: 10px;
+    }
+
+    footer{
+        display: block;
+    }
+
+    .listefooter{
+        padding: 0;
+    }
 }
