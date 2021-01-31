@@ -539,9 +539,46 @@ footer h3{
 @media only screen and (max-width: 375px) {
 
     header{
-        padding: 10px 20px;
+        padding: 20px 10px;
     }
 
+    .menu{
+        flex-wrap: wrap;
+        flex-direction: row-reverse;
+        width: 100%;
+    }
+
+    .menu a{
+        margin: 0 auto;
+        padding: 0;
+    }
+
+    .menu span{
+        order: -1;
+        padding-top: 20px;
+    }
+
+    .logo{
+        position: absolute;
+    }
+
+    .navigation{
+        width: 100%;
+    }
+
+    .navigation ul{
+        padding: 15px 0;
+        display: flex;
+        justify-content: space-around;
+        border-bottom: solid 3px  #F2F2F2;
+    }
+
+    .navigation a:hover{
+        border-top: none;
+        border-bottom: solid 3px #0065FC;
+    }
+
+    /* zone de recherche filtres */
     main{
         display: block;
         padding: 20px;
@@ -551,12 +588,14 @@ footer h3{
         flex-wrap: wrap;
     }
 
+    /* principal hebergements et populaires*/
+
     #hebergements{
         display: block;
         margin: 0 auto;
     }
 
-    .section{
+    section{
         padding: 10px;
     }
 
