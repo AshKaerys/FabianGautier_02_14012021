@@ -77,9 +77,6 @@ nav .inscrire{
 .search i{
     font-size: 1.2em;
     background-color: #F2F2F2;
-    border-style: solid ;
-    border-right-style: none;
-    border-color: #F2F2F2;
     border-top-left-radius: 15px;
     border-bottom-left-radius: 15px;
     padding: 15px;
@@ -113,6 +110,10 @@ nav .inscrire{
     color: black;
 }
 
+.mobile_search{
+    display: none;
+}
+
 /* boutons filtre */
 
 .filtre{
@@ -138,7 +139,7 @@ nav .inscrire{
 .filtre a:hover{
     font-weight: normal;
     color: #0065FC;
-    border: 3px solid #0065FC;
+    border: 2px solid #0065FC;
 }
 
 .filtre i{
@@ -170,7 +171,7 @@ nav .inscrire{
     border-radius: 100%;
     font-size: 1em;
     margin-right: 10px;
-    padding: 0.4% 0.7% 0.4% 0.7%;
+    padding: 5px 10px;
 }
 
 .info p{
@@ -579,25 +580,98 @@ footer h3{
     }
 
     /* zone de recherche filtres */
-    main{
-        display: block;
-        padding: 20px;
+
+    .desktop_search{
+        display: none;
     }
 
+    .mobile_search{
+        display: block;
+        padding: 0;
+    }
+
+    .mobile_search i{
+        background-color: #0065fc;
+        border-radius: 15px;
+    }
+
+    .search button{
+        border-radius: 15px;
+        padding: 0%;
+    }
     .filtre{
         flex-wrap: wrap;
     }
 
+    .filtre h2{
+        width: 100%;
+    }
+
+    .filtre a{
+        font-size: 1em;
+        margin-left: 0;
+        margin-right: 10px;
+        margin-bottom: 12px;
+        padding-right: 15px;
+    }
+
+    .filtre .eco{
+        width: 160px;
+    }
+
+    .filtre .family{
+        width: 120px
+    }
+
+    .info{
+        margin: 0;
+    }
+
+    .bouton_recherche{
+        margin-bottom: 10px;
+    }
+
     /* principal hebergements et populaires*/
+
+    main{
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+    }
+
+    aside{
+        order: -1;
+        padding: 0;
+        border-radius: 0;
+    }
+
+    aside h2{
+        margin-left: 10px;
+    }
+
+    aside a{
+        padding: 0 15px;
+    }
 
     #hebergements{
         display: block;
         margin: 0 auto;
+        padding: 0;
+        background-color: white;
     }
+
+    #hebergements h2{
+        margin-left: 10px;
+    }
+
+    /* activités cadres*/
+
 
     section{
         padding: 10px;
     }
+
+    /* footer */
 
     footer{
         display: block;
