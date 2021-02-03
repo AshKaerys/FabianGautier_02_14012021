@@ -91,8 +91,7 @@ nav .inscrire{
 
 .search button{
     background-color: #0065FC;
-    border-style: solid;
-    border-color: #0065FC;
+    border-style: none;
     border-top-right-radius: 15px;
     border-bottom-right-radius: 15px;
     color: white;
@@ -143,8 +142,6 @@ nav .inscrire{
 }
 
 .filtre i{
-    border-style: solid; 
-    border-color: #DEEBFF;
     background-color: #DEEBFF;
     border-radius: 100%;
     color: #0065FC;
@@ -318,7 +315,6 @@ main a:hover{
 /* aside les plus populaires */
 
 aside{
-    border: solid #F2F2F2;
     background-color: #F2F2F2;
     border-radius: 20px;
     padding: 0 40px 0 40px;
@@ -577,6 +573,11 @@ footer h3{
     .navigation a:hover{
         border-top: none;
         border-bottom: solid 3px #0065FC;
+        padding-bottom: 15px;
+    }
+
+    .menu a:hover{
+        border-top: none;
     }
 
     /* zone de recherche filtres */
@@ -598,6 +599,8 @@ footer h3{
     .search button{
         border-radius: 15px;
         padding: 0%;
+        position: absolute;
+        left: 260px;
     }
     .filtre{
         flex-wrap: wrap;
@@ -646,7 +649,8 @@ footer h3{
     }
 
     aside h2{
-        margin-left: 10px;
+        margin-right: 15px;
+        margin-left: 15px;
     }
 
     aside a{
@@ -664,17 +668,66 @@ footer h3{
         margin-left: 10px;
     }
 
+    .hebergements{
+        display: block;
+    }
+
+    .fichecadre{
+        width: 335px;
+        height: 200px;
+    }
+
     /* activités cadres*/
 
+    #activites{
+        justify-content: space-around;
+    }
+
+    .activitescadre1{
+        width: 335px;
+        height: 190px;
+    }
+
+    .activitescadre2{
+        width: 335px;
+        height: 190px;
+    }
+
+    .activitescadre3{
+        width: 335px;
+        height: 190px;
+    }
+
+    .activitescadre4{
+        width: 335px;
+        height: 190px;
+    }
+
+    .activitescadre5{
+        width: 335px;
+        height: 190px;
+    }
+
+    .activitescadre_img1, .activitescadre_img2, .activitescadre_img3, .activitescadre_img4, .activitescadre_img5, .activitescadre_img6{
+        width: 335px;
+        height: 135px;
+    }
 
     section{
         padding: 10px;
+    }
+
+    #activites a{
+        padding-bottom: 25px;
     }
 
     /* footer */
 
     footer{
         display: block;
+        margin-top: 0;
+        padding-top: 40px;
+        padding-bottom: 40px;
     }
 
     .listefooter{
