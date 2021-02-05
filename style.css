@@ -314,6 +314,10 @@ main a:hover{
 
 /* aside les plus populaires */
 
+.arrow{
+    display: none;
+}
+
 aside{
     background-color: #F2F2F2;
     border-radius: 20px;
@@ -531,6 +535,112 @@ footer h3{
     margin-left: 40px;
 }
 
+/* media queries tab*/
+
+@media screen and (max-width: 768px) and (min-width: 376px){
+    .filtre{
+        flex-wrap: wrap;
+        align-items: unset;
+    }
+
+    .filtre a{
+        margin-right: 40px;
+        margin-bottom: 20px;
+    }
+
+    main{
+        flex-direction: column-reverse;
+    }
+
+    aside{
+        margin-bottom: 20px;
+        padding-bottom: 20px;
+    }
+
+    .arrow{
+        display: unset;
+        color: #0065FC;
+        font-size: 1.5em;
+        
+    }
+
+    .popular{
+        display: flex;
+        overflow-x: scroll;
+    }
+
+    /*test animation*/
+
+    .arrow{
+        animation-duration: 4s;
+        animation-name: slidein;
+        animation-iteration-count: 4;
+        animation-direction: alternate;
+    }
+
+    @keyframes slidein{
+        0%{
+        margin-left: 0%;
+        width: 100%;
+        }
+        100%{
+        margin-left: 100%;
+        width: 100%;
+        }
+    }
+
+    /* anime end */
+
+    .fichecadre_aside{
+        margin-right: 40px;
+    }
+
+    #hebergements{
+        margin-right: 0;
+    }
+
+    .activitescadre1{
+        width: 300px;
+        height: 190px;
+    }
+
+    .activitescadre2{
+        width: 300px;
+        height: 190px;
+    }
+
+    .activitescadre3{
+        width: 300px;
+        height: 190px;
+    }
+
+    .activitescadre4{
+        width: 300px;
+        height: 190px;
+    }
+
+    .activitescadre5{
+        width: 300px;
+        height: 190px;
+    }
+
+    .activitescadre_img1, .activitescadre_img2, .activitescadre_img3,
+    .activitescadre_img4, .activitescadre_img5, .activitescadre_img6{
+        width: 300px;
+        height: 135px;
+    }
+
+
+    .listefooter{
+        padding-right: 20px;
+        padding-left: 0;
+    }
+
+}
+
+
+
+
 /* media queries smartphone*/
 
 @media only screen and (max-width: 375px) {
@@ -734,3 +844,4 @@ footer h3{
         padding: 0;
     }
 }
+
