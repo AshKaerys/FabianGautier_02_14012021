@@ -507,6 +507,10 @@ height: 390px;
     justify-content: space-between;
 }
 
+section .arrow{
+    display: none;
+}
+
 /* Footer */
 
 footer{
@@ -537,7 +541,7 @@ footer h3{
 
 /* media queries tab*/
 
-@media screen and (max-width: 768px) and (min-width: 376px){
+@media screen and (max-width: 1024px) and (min-width: 376px){
     .filtre{
         flex-wrap: wrap;
         align-items: unset;
@@ -571,6 +575,10 @@ footer h3{
 
     /*test animation*/
 
+    .arrowcontain{
+        overflow: hidden;
+    }
+
     .arrow{
         animation-duration: 4s;
         animation-name: slidein;
@@ -584,7 +592,7 @@ footer h3{
         width: 100%;
         }
         100%{
-        margin-left: 100%;
+        margin-left: 90%;
         width: 100%;
         }
     }
@@ -592,11 +600,33 @@ footer h3{
     /* anime end */
 
     .fichecadre_aside{
-        margin-right: 40px;
+        margin-right: 20px;
     }
 
     #hebergements{
         margin-right: 0;
+        padding: 20px 40px;
+    }
+
+    /* activités */
+
+    #activites{
+        flex-wrap: nowrap;
+        overflow-x: scroll;
+    }
+
+    .container, .container2{
+        flex-wrap: nowrap;
+        flex-direction: row;
+    }
+
+    #activites a{
+        margin-right: 20px;
+        margin-bottom: 20px;
+    }
+
+    .fichecadre{
+        margin-bottom: 20px;
     }
 
     .activitescadre1{
@@ -637,9 +667,6 @@ footer h3{
     }
 
 }
-
-
-
 
 /* media queries smartphone*/
 
