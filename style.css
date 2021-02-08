@@ -138,7 +138,9 @@ nav .inscrire{
 .filtre a:hover{
     font-weight: normal;
     color: #0065FC;
-    border: 2px solid #0065FC;
+    background-color: #0065FC;
+    color: white;
+    transition: 1s;
 }
 
 .filtre i{
@@ -314,7 +316,7 @@ main a:hover{
 
 /* aside les plus populaires */
 
-.arrow{
+aside .arrow{
     display: none;
 }
 
@@ -541,7 +543,7 @@ footer h3{
 
 /* media queries tab*/
 
-@media screen and (max-width: 1024px) and (min-width: 376px){
+@media screen and (max-width: 768px) and (min-width: 376px){
     .filtre{
         flex-wrap: wrap;
         align-items: unset;
@@ -561,11 +563,10 @@ footer h3{
         padding-bottom: 20px;
     }
 
-    .arrow{
+    aside .arrow{
         display: unset;
         color: #0065FC;
         font-size: 1.5em;
-        
     }
 
     .popular{
@@ -660,6 +661,11 @@ footer h3{
         height: 135px;
     }
 
+    section .arrow{
+        display: unset;
+        color: #0065FC;
+        font-size: 1.5em;
+    }
 
     .listefooter{
         padding-right: 20px;
@@ -682,9 +688,12 @@ footer h3{
         width: 100%;
     }
 
+    .menu li a{
+        padding: 0 45px;
+    }
+
     .menu a{
         margin: 0 auto;
-        padding: 0;
     }
 
     .menu span{
@@ -709,7 +718,7 @@ footer h3{
 
     .navigation a:hover{
         border-top: none;
-        border-bottom: solid 3px #0065FC;
+        border-bottom: solid 3px #0065FC ;
         padding-bottom: 15px;
     }
 
