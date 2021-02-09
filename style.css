@@ -186,15 +186,18 @@ main{
 }
 
 section a:hover{
-    transform: scale(1.1);
+    transform: scale(1.05);
+    opacity: 0.7;
 }
 
 main a:hover{
-    transform: scale(1.1);
+    transform: scale(1.05);
+    opacity: 0.7;
 }
 
 .fichecadre:hover{
-    transform: scale(1.1);
+    transform: scale(1.05);
+    opacity: 0.7;
 }
 
 #hebergements{
@@ -315,10 +318,6 @@ main a:hover{
 }
 
 /* aside les plus populaires */
-
-aside .arrow{
-    display: none;
-}
 
 aside{
     background-color: #F2F2F2;
@@ -509,22 +508,20 @@ height: 390px;
     justify-content: space-between;
 }
 
-section .arrow{
-    display: none;
-}
-
 /* Footer */
 
 footer{
     background-color: #F2F2F2;
     display: flex;
     margin-top: 60px;
+    padding-bottom: 40px;
     line-height: 2em;
 }
 
-.listefooter{
-    padding-right: 40px;
-    padding-left: 200px;
+.footer{
+    width: 75%;
+    display: flex;
+    justify-content: space-between;
 }
 
 footer a{
@@ -543,7 +540,12 @@ footer h3{
 
 /* media queries tab*/
 
-@media screen and (max-width: 768px) and (min-width: 376px){
+@media screen and (max-width: 768px){
+
+    .menu a{
+        margin-left: 1.5em;
+    }
+
     .filtre{
         flex-wrap: wrap;
         align-items: unset;
@@ -563,43 +565,6 @@ footer h3{
         padding-bottom: 20px;
     }
 
-    aside .arrow{
-        display: unset;
-        color: #0065FC;
-        font-size: 1.5em;
-    }
-
-    .popular{
-        display: flex;
-        overflow-x: scroll;
-    }
-
-    /*test animation*/
-
-    .arrowcontain{
-        overflow: hidden;
-    }
-
-    .arrow{
-        animation-duration: 4s;
-        animation-name: slidein;
-        animation-iteration-count: 4;
-        animation-direction: alternate;
-    }
-
-    @keyframes slidein{
-        0%{
-        margin-left: 0%;
-        width: 100%;
-        }
-        100%{
-        margin-left: 90%;
-        width: 100%;
-        }
-    }
-
-    /* anime end */
-
     .fichecadre_aside{
         margin-right: 20px;
     }
@@ -613,7 +578,6 @@ footer h3{
 
     #activites{
         flex-wrap: nowrap;
-        overflow-x: scroll;
     }
 
     .container, .container2{
@@ -661,22 +625,16 @@ footer h3{
         height: 135px;
     }
 
-    section .arrow{
-        display: unset;
-        color: #0065FC;
-        font-size: 1.5em;
-    }
-
-    .listefooter{
-        padding-right: 20px;
-        padding-left: 0;
+    .footer{
+        width: 100%;
+        justify-content: space-around;
     }
 
 }
 
 /* media queries smartphone*/
 
-@media only screen and (max-width: 375px) {
+@media only screen and (max-width: 414px) {
 
     header{
         padding: 20px 10px;
@@ -737,6 +695,10 @@ footer h3{
         padding: 0;
     }
 
+    .search input{
+        width: 250px;
+    }
+
     .mobile_search i{
         background-color: #0065fc;
         border-radius: 15px;
@@ -746,13 +708,13 @@ footer h3{
         border-radius: 15px;
         padding: 0%;
         position: absolute;
-        left: 260px;
+        left: 290px;
     }
     .filtre{
         flex-wrap: wrap;
     }
 
-    .filtre h2{
+    .filtre_h2{
         width: 100%;
     }
 
@@ -803,6 +765,10 @@ footer h3{
         padding: 0 15px;
     }
 
+    .fichecadre_aside{
+        margin: 0 0 20px 0;
+    }
+
     #hebergements{
         display: block;
         margin: 0 auto;
@@ -826,7 +792,11 @@ footer h3{
     /* activités cadres*/
 
     #activites{
-        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+
+    .container, .container2{
+        flex-direction: column;
     }
 
     .activitescadre1{
@@ -870,10 +840,13 @@ footer h3{
     /* footer */
 
     footer{
-        display: block;
         margin-top: 0;
         padding-top: 40px;
         padding-bottom: 40px;
+    }
+    
+    .footer{
+        display: block;
     }
 
     .listefooter{
