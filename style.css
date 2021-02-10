@@ -119,6 +119,10 @@ nav .inscrire{
     display: flex;
     align-items: center;
 }
+.filter-button{
+    display: flex;
+    flex-wrap: wrap;
+}
 
 .filtre a{
     display: flex;
@@ -401,6 +405,7 @@ aside a i{
 #activites a{
     text-decoration: none;
     color: black;
+    margin-bottom: 20px;
 }
 
 .activitescadre1{
@@ -540,14 +545,13 @@ footer h3{
 
 /* media queries tab*/
 
-@media screen and (max-width: 768px){
+@media screen and (max-width: 1024px){
 
     .menu a{
         margin-left: 1.5em;
     }
 
     .filtre{
-        flex-wrap: wrap;
         align-items: unset;
     }
 
@@ -562,11 +566,19 @@ footer h3{
 
     aside{
         margin-bottom: 20px;
-        padding-bottom: 20px;
+        padding: 0 20px 20px 20px;
     }
 
     .fichecadre_aside{
         margin-right: 20px;
+        width: 295px;
+        height: 130px;
+    }
+
+    .popular{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
     }
 
     #hebergements{
@@ -577,16 +589,19 @@ footer h3{
     /* activités */
 
     #activites{
-        flex-wrap: nowrap;
+        flex-wrap: wrap;
+        justify-content: space-around;
     }
 
     .container, .container2{
         flex-wrap: nowrap;
-        flex-direction: row;
+    }
+
+    .calanques{
+        order: -1;
     }
 
     #activites a{
-        margin-right: 20px;
         margin-bottom: 20px;
     }
 
@@ -634,7 +649,7 @@ footer h3{
 
 /* media queries smartphone*/
 
-@media only screen and (max-width: 414px) {
+@media only screen and (max-width: 432px) {
 
     header{
         padding: 20px 10px;
@@ -696,7 +711,8 @@ footer h3{
     }
 
     .search input{
-        width: 250px;
+        width: 80%;
+        margin-right: -2%;
     }
 
     .mobile_search i{
@@ -707,9 +723,8 @@ footer h3{
     .search button{
         border-radius: 15px;
         padding: 0%;
-        position: absolute;
-        left: 290px;
     }
+    
     .filtre{
         flex-wrap: wrap;
     }
@@ -763,6 +778,10 @@ footer h3{
 
     aside a{
         padding: 0 15px;
+    }
+
+    .popular{
+        justify-content: space-around;
     }
 
     .fichecadre_aside{
@@ -835,6 +854,7 @@ footer h3{
 
     #activites a{
         padding-bottom: 25px;
+        margin-right: 0;
     }
 
     /* footer */
