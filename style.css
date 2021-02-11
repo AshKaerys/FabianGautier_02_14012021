@@ -843,7 +843,8 @@ footer h3{
         height: 190px;
     }
 
-    .activitescadre_img1, .activitescadre_img2, .activitescadre_img3, .activitescadre_img4, .activitescadre_img5, .activitescadre_img6{
+    .activitescadre_img1, .activitescadre_img2, .activitescadre_img3, 
+    .activitescadre_img4, .activitescadre_img5, .activitescadre_img6{
         width: 335px;
         height: 135px;
     }
@@ -874,3 +875,51 @@ footer h3{
     }
 }
 
+/* mediaqueries phone 350px */
+
+@media only screen and (max-width: 360px){
+
+    body{
+        overflow-x: hidden;
+    }
+
+    #hebergements h2{
+        font-size: 1.3em;
+    }
+
+    .fichecadre{
+        width: 290px;
+    }
+
+    .activitescadre1{
+        width: 290px;
+        height: 190px;
+    }
+
+    .activitescadre2{
+        width: 290px;
+        height: 190px;
+    }
+
+    .activitescadre3{
+        width: 290px;
+        height: 190px;
+    }
+
+    .activitescadre4{
+        width: 290px;
+        height: 190px;
+    }
+
+    .activitescadre5{
+        width: 290px;
+        height: 190px;
+    }
+
+    .activitescadre_img1, .activitescadre_img2, .activitescadre_img3, 
+    .activitescadre_img4, .activitescadre_img5, .activitescadre_img6{
+        width: 290px;
+        height: 135px;
+    }
+
+}
