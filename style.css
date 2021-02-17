@@ -768,6 +768,7 @@ footer ul{
     }
 
     .fichecadre_aside{
+        width: 335px;
         margin: 0 0 20px 0;
     }
 
@@ -788,10 +789,6 @@ footer ul{
     }
 
     /* activités cadres*/
-
-    section h2{
-        margin-left: 10px;
-    }
 
     #activites a{
         width: 335px;
