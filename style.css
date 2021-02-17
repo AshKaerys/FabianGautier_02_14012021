@@ -516,9 +516,10 @@ footer{
 }
 
 .footer_container{
-    width: 100%;
+    width: 60%;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    margin-left: 230px;
 }
 
 footer a{
@@ -534,16 +535,16 @@ footer ul{
 
 /* ajustement footer 1440px */
 
-@media screen and (max-width: 1440px){
+@media only screen and (max-width: 1440px){
     .footer_container{
-        max-width: 75%;
+        width: 75%;
         margin-left: 40px;
         justify-content: space-between;
     }
 }
 /* media queries tab*/
 
-@media screen and (max-width: 1024px){
+@media only screen and (max-width: 1024px){
 
     .menu a{
         margin-left: 1.5em;
@@ -568,8 +569,7 @@ footer ul{
     }
 
     .fichecadre_aside{
-        margin-right: 20px;
-        width: 335px;
+        width: 310px;
         height: 145px;
     }
 
@@ -608,7 +608,7 @@ footer ul{
         margin-bottom: 20px;
     }
 
-    .activitescadre1, .activitescadre2, .activitescadre3, .activitescadre4
+    .activitescadre1, .activitescadre2, .activitescadre3, .activitescadre4,
     .activitescadre5{
         width: 300px;
         height: 190px;
@@ -621,13 +621,13 @@ footer ul{
     }
 
     .footer_container{
-        max-width: 100%;
+        width: 100%;
         justify-content: space-around;
     }
 
 }
 
-@media screen and (max-width: 975px){
+@media only screen and (max-width: 975px){
     #activites{
         flex-direction: row;
         height: auto;
@@ -775,11 +775,7 @@ footer ul{
         display: block;
         margin: 0 auto;
         padding: 0;
-        background-color: white;
-    }
-
-    #hebergements h2{
-        margin-left: 10px;
+        background-color: unset;
     }
 
     .hebergements{
@@ -797,13 +793,8 @@ footer ul{
         margin-left: 10px;
     }
 
-    #activites{
-        flex-direction: column;
-        flex-wrap: wrap;
-    }
-
-    .container, .container2{
-        flex-direction: column;
+    #activites a{
+        width: 335px;
     }
 
     .activitescadre1, .activitescadre2, .activitescadre3, .activitescadre4,
@@ -823,7 +814,6 @@ footer ul{
     }
 
     #activites a{
-        padding-bottom: 25px;
         margin-right: 0;
     }
 
@@ -855,6 +845,10 @@ footer ul{
 
     #hebergements h2{
         font-size: 1.3em;
+    }
+
+    .fichecadre_aside{
+        width: 290px;
     }
 
     .fichecadre{
